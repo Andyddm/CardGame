@@ -228,6 +228,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Tarena;
 				TargetAttributes = {
+					85CF9E571B20479B00E89407 = {
+						DevelopmentTeam = 563M4H9P36;
+					};
 					85CF9E781B20479B00E89407 = {
 						TestTargetID = 85CF9E571B20479B00E89407;
 					};
@@ -238,6 +241,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -402,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardGame/CardGame-Prefix.pch";
 				INFOPLIST_FILE = "CardGame/CardGame-Info.plist";
@@ -415,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardGame/CardGame-Prefix.pch";
 				INFOPLIST_FILE = "CardGame/CardGame-Info.plist";

@@ -30,6 +30,18 @@
     // 使用扑克牌创建游戏实例
     self.game = [[Game alloc]initWithNumberOfCards:self.allButtons.count inPoker:self.poker];
     [self showCards];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"injected!!! yes yes yes";
+    label.textColor = [UIColor redColor];
+    [label setFrame:CGRectMake(50, 400, 200, 40)];
+    [self.view addSubview:label];
+    [self.view bringSubviewToFront:label];
+}
+
+- (void)injected{
+    NSLog(@"I've been injected: %@", self);
+    [self viewDidLoad];
 }
 
 // 显示allRandomCards数组中的纸牌信息到
@@ -49,6 +61,8 @@
         // button enable  NO     YES
         [button setEnabled:!card.matched];
     }
+    
+    
 }
 
 //根据纸牌的faceUp状态,返回对应的背景图的名称

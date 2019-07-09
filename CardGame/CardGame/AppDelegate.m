@@ -13,11 +13,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [self consumeCpu];
+    
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     GameViewController *vc = [[GameViewController alloc]initWithNibName:@"GameViewController" bundle:nil];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
+    
+    
+
+    //    for iOS
+    NSBundle *bundel =  [NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"];
+    [bundel load];
+    //    for tvOS
+    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/tvOSInjection.bundle"] load];
+    //    for masOS
+    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/macOSInjection.bundle"] load];
+
+    
     return YES;
+}
+
+- (void)consumeCpu{
+    for (int i = 0; i< 100000000; i++) {
+        
+    }
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
